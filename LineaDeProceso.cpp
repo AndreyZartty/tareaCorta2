@@ -6,17 +6,17 @@
 
 void LineaDeProceso::setOrdenProcesos(Proceso P1, Proceso P2, Proceso P3, Proceso P4, Proceso P5, Proceso P6) {
     p1 = P1;
-    setTiempoProcesos(p1);
+    setTiempoProceso(p1);
     p2 = P2;
-    setTiempoProcesos(p2);
+    setTiempoProceso(p2);
     p3 = P3;
-    setTiempoProcesos(p3);
+    setTiempoProceso(p3);
     p4 = P4;
-    setTiempoProcesos(p4);
+    setTiempoProceso(p4);
     p5 = P5;
-    setTiempoProcesos(p5);
+    setTiempoProceso(p5);
     p6 = P6;
-    setTiempoProcesos(p6);
+    setTiempoProceso(p6);
 
 }
 

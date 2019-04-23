@@ -1,6 +1,16 @@
-cmake_minimum_required(VERSION 3.14)
-project(tareaCorta)
+cmake_minimum_required(VERSION 3.13)
+project(tareaCorta2)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(tareaCorta main.cpp LineaDeProceso.cpp LineaDeProceso.h Proceso.cpp Proceso.h Agenda.cpp Agenda.h)
+include_directories(.)
+
+add_executable(tareaCorta2
+        Agenda.cpp
+        Agenda.h
+        LineaDeProceso.cpp
+        LineaDeProceso.h
+        main.cpp
+        Proceso.cpp
+        Proceso.h
+        README.md List.cpp List.h Node.cpp Node.h)
