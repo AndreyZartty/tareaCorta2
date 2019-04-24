@@ -12,11 +12,34 @@ Node* List::getPointerHead() {
 void List::setPointerHead(Node* head) {
     pointerHead = head;
 }
-void List::insertFirst(Node newNode) {
-    Node* pointeraux = new Node(getPointerHead(), 0);
-    std::cout<<pointeraux<<std::endl;
-    newNode.set_nxtNd(pointeraux->get_nxtPtr());
-    setPointerHead(&newNode);
-    std::cout<<getPointerHead()<<std::endl;
-    delete(&pointeraux);
+void List::insertFirst(Proceso proceso) {
+    Node* pointeraux = new Node(pointerHead, proceso);
+    setPointerHead(pointeraux);
+}
+
+int List::getSize() {
+    Node *current = getPointerHead();
+    int c=0;
+    while(current != nullptr){
+        current = current->get_nxtPtr();
+        c++;
+    }
+    return c;
+}
+
+Node *List::getLast() {
+    Node *current = getPointerHead();
+    while(current->get_nxtPtr() != nullptr){
+        current = current->get_nxtPtr();
+    }
+    return current;
+}
+
+void List::insertLast(Proceso proceso) {
+    Node* aux = new Node(nullptr, proceso);
+    Node *current = getPointerHead();
+    while(current->get_nxtPtr() != nullptr){
+        current = current->get_nxtPtr();
+    }
+    current->set_nxtNd(aux);
 }

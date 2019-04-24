@@ -15,8 +15,10 @@ public:
 
     Node* getPointerHead();
     void setPointerHead(Node* head);
-    void insertFirst(Node newNode);
-
+    void insertFirst(Proceso proceso);
+    int getSize();
+    Node* getLast();
+    void insertLast(Proceso proceso);
 private:
 
     Node* pointerHead;

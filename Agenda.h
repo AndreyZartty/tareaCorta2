@@ -7,11 +7,13 @@
 
 
 #include "Proceso.h"
+#include "List.h"
 
 class Agenda {
 private:
-    Proceso enProceso[2];
-
+    List procesos;
+public:
+    void agregar(Proceso proceso,List cola);
 };
 
 

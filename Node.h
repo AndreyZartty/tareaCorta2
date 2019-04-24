@@ -5,15 +5,18 @@
 #ifndef TAREACORTA2_NODE_H
 #define TAREACORTA2_NODE_H
 
+#include "Proceso.h"
+
+
 class Node {
 public:
-    Node(Node* _nxtPtr, int _data);
-    void set_data(int _data);
+    Node(Node* _nxtPtr, Proceso _data);
+    void set_data(Proceso _data);
     void set_nxtNd(Node* node);
-    int get_data(); //Luego cambiar a "int"
+    Proceso get_data(); //Luego cambiar a "int"
     Node* get_nxtPtr(); //Luego cambiar a "int"
 private:
-    int data;
+    Proceso data;
     Node* nxtPtr;
 };
 
